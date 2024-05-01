@@ -6,4 +6,10 @@ describe('pointsForWord', () => {
         const points  = pointsForWord(word);
         expect(points).toBe(7);
     });
+
+    it('handles uppercase and lowercase input', () => {
+        const word = 'tEst';
+        const points = pointsForWord(word);
+        expect(points).toBe(7);
+    })
 });
